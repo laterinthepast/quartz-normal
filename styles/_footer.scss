@@ -1,0 +1,28 @@
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+  padding: 5vw;
+  background: #000;
+  color: #fff;
+  font-size: 2vw;
+  address {
+   
+    font-size: 1.9vw;
+  }
+  .footer-columns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+  @media screen and (max-width: 414px) {
+    font-size: 1rem;
+  }
+}

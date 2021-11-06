@@ -1,0 +1,63 @@
+.about-text {
+    padding: 2vw 10vw 5vw 10vw;
+    font-size: 2vw;  
+}
+.about-back {
+    position: absolute;
+    top: 0;
+    right: 0;
+    img {
+        
+    }
+}
+.about-backo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    img {
+        width: 30vw;
+    }
+}
+.about-personals {
+    padding: 2vw 10vw;
+    position: relative; 
+}
+.about-personal {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: justify;
+    padding: 4vw;
+    font-size: 2vw;
+}
+.span-one {
+    border-bottom: 5px solid #FFA513;
+    font-weight: 900;
+}
+.span-strong {
+     font-weight: 900;
+}
+@media screen and (max-width: 768px){
+    .about-text {
+    padding: 2vw;
+    font-size: 4vw;  
+    }
+    .about-personals {
+        padding: 0;
+    }
+    .about-backo {
+        img {
+            width: 50vw;
+        }
+    }
+    .about-back {
+        img {
+            display: none;
+        }
+    }
+    .about-personal {
+        font-size: 4vw;
+    }
+
+}

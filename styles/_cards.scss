@@ -1,0 +1,77 @@
+.cards {
+  margin: 5vw 15vw;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  background: rgb(199, 218, 255);
+  background: radial-gradient(
+    circle,
+    rgba(199, 218, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 50%
+  );
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 50px;
+    z-index: 999;
+    background-color: #fff;
+    transition: 0.2s all ease-in-out;
+
+    img {
+      height: 9vw;
+      padding: 1vw;
+    }
+    p {
+      padding: 0.5rem 1rem 1rem;
+      font-size: 1vw;
+      text-align: center;
+      font-weight: 600;
+    }
+  }
+  .one {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: center;
+  }
+  .two {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-self: end;
+  }
+  .three {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    justify-self: start;
+  }
+  .four {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    justify-self: center;
+  }
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-top: 20vw;
+    .card {
+      height: 13rem;
+      width: 13rem;
+      margin: 1rem;
+      p {
+        font-size: 0.7rem;
+      }
+      img {
+        height: 60px;
+      }
+    }
+  }
+}
