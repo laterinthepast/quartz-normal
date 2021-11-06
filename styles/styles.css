@@ -159,6 +159,7 @@ navbar .nav-items ul li a {
   text-decoration: none;
   padding: 0.6vw;
   color: #000;
+  font-size: 1.2vw;
 }
 
 @media (max-width: 768px) {
