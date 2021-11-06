@@ -211,14 +211,15 @@ navbar .nav-items ul li a {
     -webkit-box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
             box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   }
+  navbar .nav-items ul li a {
+    padding: 0.5vw;
+    color: #000;
+    font-size: 3.2vw;
+  }
   navbar .nav-items ul .b1,
   navbar .nav-items ul .b2,
   navbar .nav-items ul .b3 {
     display: none;
-  }
-  navbar .nav-items ul a {
-    padding: 0.1vw;
-    color: #ffa513;
   }
 }
 

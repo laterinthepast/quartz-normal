@@ -152,16 +152,18 @@ navbar {
           border-radius: 3px;
           font-size: 3vw;
           box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+          a {
+          padding: 0.5vw;
+          color: #000;
+          font-size: 3.2vw;
+        }
         }
         .b1,
         .b2,
         .b3 {
           display: none;
         }
-        a {
-          padding: 0.1vw;
-          color: #ffa513;
-        }
+        
       }
     }
   }
