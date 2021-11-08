@@ -55,11 +55,9 @@ navbar .navbar-logo-title h1 {
 navbar .navbar-message h3 {
   position: absolute;
   top: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  left: 0;
   margin: 0;
-  width: 100%;
+  width: 100vw;
   text-align: center;
   background: #d3d9fa;
   font-size: 1.5vw;
@@ -334,7 +332,6 @@ navbar .nav-items ul li a {
 
 .cards {
   margin: 5vw 15vw;
-  max-width: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -527,12 +524,9 @@ navbar .nav-items ul li a {
 
 .about-back {
   position: absolute;
-  top: 0;
-  right: 0;
 }
 
 .about-backo {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -542,7 +536,7 @@ navbar .nav-items ul li a {
 }
 
 .about-backo img {
-  width: 30vw;
+  width: 20vw;
 }
 
 .about-personals {
@@ -603,10 +597,9 @@ navbar .nav-items ul li a {
 }
 
 footer {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 5vw;
   background: #000;
   color: #fff;
@@ -662,7 +655,7 @@ footer .footer-columns {
   /* Place the button at the bottom of the page */
   right: 30px;
   /* Place the button 30px from the right */
-  z-index: 99;
+  z-index: 999;
   /* Make sure it does not overlap */
   border: none;
   /* Remove borders */
