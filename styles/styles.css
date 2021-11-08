@@ -613,14 +613,16 @@ footer .footer-columns {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    gap: 2vw;
     height: auto;
     padding: 1rem;
   }
-}
-
-@media screen and (max-width: 414px) {
-  footer {
-    font-size: 1rem;
+  footer h4 {
+    font-size: 5vw;
+    padding: 1vw;
+  }
+  footer address {
+    font-size: 4vw;
   }
 }
 
