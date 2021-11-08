@@ -5,8 +5,14 @@
   gap: 3vw;
   .tests-card {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     img {
-      width: 100%;
+      max-width: 100%;
+      
+      
     }
     h4 {
       position: absolute;
@@ -16,11 +22,18 @@
       font-size: 2.5vw;
       background-color: white;
       color: #000;
+      transition: all 0.1s ease-in-out;
+      &:hover {
+        color: #ffa513;
+      }
     }
   }
   @media (max-width: 768px) {
     grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
     .tests-card {
+      &:hover {
+        transform: none;
+      }
       h4 {
         font-size: 3.5vw;
       }

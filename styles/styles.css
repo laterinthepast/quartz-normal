@@ -369,6 +369,11 @@ navbar .nav-items ul li a {
   transition: 0.2s all ease-in-out;
 }
 
+.cards .card:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
 .cards .card img {
   height: 9vw;
   padding: 1vw;
@@ -469,10 +474,19 @@ navbar .nav-items ul li a {
 
 .tests .tests-card {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .tests .tests-card img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .tests .tests-card h4 {
@@ -484,12 +498,22 @@ navbar .nav-items ul li a {
   font-size: 2.5vw;
   background-color: white;
   color: #000;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.tests .tests-card h4:hover {
+  color: #ffa513;
 }
 
 @media (max-width: 768px) {
   .tests {
     -ms-grid-columns: (minmax(30vw, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+  }
+  .tests .tests-card:hover {
+    -webkit-transform: none;
+            transform: none;
   }
   .tests .tests-card h4 {
     font-size: 3.5vw;
