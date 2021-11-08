@@ -312,6 +312,7 @@ navbar .nav-items ul li a {
     text-decoration: none;
     color: #fff;
     font-family: "Lora", serif;
+    letter-spacing: 0.5vw;
     font-weight: 700;
   }
   .hero-buttons button:not(:first-child) {
