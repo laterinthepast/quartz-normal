@@ -10,6 +10,9 @@
       width: 100%;
     }
   }
+  &-buttons {
+    display: none;
+  }
   .landing-text {
     flex: 1;
     padding: 1.2vw 0;
@@ -48,6 +51,7 @@
       padding-top: 20vw;
     }
     &-buttons {
+      
       padding: 5vw;
       display: flex;
       gap: 10vw;

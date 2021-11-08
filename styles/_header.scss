@@ -2,7 +2,7 @@ navbar {
   display: flex;
   gap: 1vw;
   position: relative;
-  padding: 3vw 5vw 0vw 5vw;
+  padding: 3vw 3vw 0vw 3vw;
   .navbar-logo {
     display: flex;
     justify-content: flex-start;
@@ -33,7 +33,7 @@ navbar {
       left: 50%;
       transform: translate(-50%);
       margin: 0;
-      width: 100%;
+      width: 100vw;
       text-align: center;
       background: #d3d9fa;
       font-size: 1.5vw;
