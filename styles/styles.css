@@ -8,7 +8,11 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  font-size: 100%;
+}
+
+html {
+  width: auto !important;
+  overflow-x: hidden !important;
 }
 
 navbar {
@@ -18,7 +22,6 @@ navbar {
   gap: 1vw;
   position: relative;
   padding: 3vw 3vw 0vw 3vw;
-  max-width: 100%;
 }
 
 navbar .navbar-logo {
@@ -57,7 +60,7 @@ navbar .navbar-message h3 {
   top: 0;
   left: 0;
   margin: 0;
-  width: 100vw;
+  width: 100%;
   text-align: center;
   background: #d3d9fa;
   font-size: 1.5vw;
@@ -192,9 +195,12 @@ navbar .nav-items ul li a {
   navbar .navbar-logo-title h3 {
     font-size: 4vw;
   }
+  navbar .navbar-message {
+    overflow: hidden;
+  }
   navbar .navbar-message h3 {
     font-size: 3.5vw;
-    padding: 1vw;
+    padding: 1vw 0;
   }
   navbar .navbar-message h2 {
     top: 35vw;
@@ -230,7 +236,7 @@ navbar .nav-items ul li a {
 }
 
 .hero .landing-img img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .hero-buttons {
