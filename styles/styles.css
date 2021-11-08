@@ -765,6 +765,9 @@ footer .footer-columns {
   .testing-cards {
     padding: 5vw 0;
   }
+  .testing-cards h1 {
+    font-size: 5vw;
+  }
   .testing-cards .info-card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

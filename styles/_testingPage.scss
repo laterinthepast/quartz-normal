@@ -71,6 +71,9 @@
     }
   }
   @media (max-width: 768px) {
+    h1 {
+      font-size: 5vw;
+    }
     padding: 5vw 0;
     .info-card {
       flex-direction: column;
