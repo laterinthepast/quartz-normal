@@ -21,7 +21,8 @@ navbar {
         margin: 0;
       }
       h1 {
-        font-size: 3.2vw;
+        font-weight: 900;
+        font-size: 3.5vw;
       }
     }
   }
@@ -34,14 +35,20 @@ navbar {
       margin: 0;
       width: 100%;
       text-align: center;
-      background: #ffa513;
-      font-size: 2vw;
+      background: #d3d9fa;
+      font-size: 1.5vw;
+      font-weight: 400;
     }
     h2 {
       position: absolute;
       right: 5vw;
-      top: 3vw;
+      top: 12vw;
       margin: 0;
+    }
+    h4 {
+      position: absolute;
+      right: 5vw;
+      top: 14vw;
     }
   }
   .nav-items {
@@ -61,12 +68,13 @@ navbar {
       gap: 2vw;
       li {
         width: 8vw;
-        height: 3vw;
+        height: 2vw;
         display: flex;
         justify-content: center;
         align-items: center;
         position: relative;
         border: 1px solid #000;
+        
         &:hover {
           .b1,
           .b2,
@@ -80,37 +88,39 @@ navbar {
         .b2,
         .b3 {
           position: absolute;
-          height: 3vw;
+          height: 2vw;
           width: 8vw;
           left: 4px;
           bottom: 4px;
           transition: 0.13s all ease-in-out;
           border-radius: 0px 0px 0px 0px;
           z-index: -1;
+          
         }
         .b1 {
-          background: #7499f1;
+          background: #E79D44;
+          
         }
         .b2 {
-          background: #d3e4fe;
+          background: #E27F2A;
         }
         .b3 {
-          background: #d3d9fe;
+          background: #FFA513;
         }
         a {
           text-decoration: none;
           padding: 0.6vw;
           color: #000;
-          font-size: 1.2vw;
+          font-size: 1.1vw;
         }
       }
     }
   }
   @media (max-width: 768px) {
-    padding-top: 15vw;
+    padding-top: 12vw;
     flex-direction: column;
     .navbar-logo {
-      flex-wrap: wrap;
+      
       img {
         width: 15vw;
       }
@@ -119,52 +129,35 @@ navbar {
         h3 {
           text-align: right;
           font-weight: 300;
-          
+          color: #7499f1;
           margin: 0;
         }
         h1 {
-          font-size: 7vw;
+          font-size: 7.5vw;
           font-weight: 900;
         }
         h3 {
           font-size: 4vw;
-          color: #000;
+          
         }
       }
     }
     .navbar-message {
       h3 {
-        font-size: 5vw;
+        font-size: 3.5vw;
+        padding: 1vw;
       }
       h2 {
-        top: 18vw;
+        top: 35vw;
+        font-weight: 100;
+      }
+      h4 {
+        top: 42vw;
         font-weight: 100;
       }
     }
     .nav-items {
-      ul {
-        padding-top: 2vw;
-        height: auto;
-        li {
-          width: auto;
-          height: auto;
-          border: 1px solid #d3d9fe;
-          border-radius: 3px;
-          font-size: 3vw;
-          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-          a {
-          padding: 0.5vw;
-          color: #000;
-          font-size: 3.2vw;
-        }
-        }
-        .b1,
-        .b2,
-        .b3 {
-          display: none;
-        }
-        
-      }
+      display: none;
     }
   }
 }
